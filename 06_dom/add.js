@@ -1,0 +1,10 @@
+const h1 = document.createElement('h1');
+ const div = document.createElement('div');
+ console.log(div);
+div.className = 'main';
+div.id = 'myId';
+div.setAttribute('title','badmashi putrr');
+div.style.color = 'pink';
+div.textContent = 'hello hai ji';
+document.body.appendChild(div);
+ console.log(h1);

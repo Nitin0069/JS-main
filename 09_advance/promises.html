@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>h
+<body>
+   <script>
+ /* const promise = new Promise (function( resolve, reject) {
+    setTimeout(function (){
+    console.log("async chal pada ")
+resolve()
+    },1000)
+      })
+    promise.then(function (){
+        console.log("async complete")
+  
+})
+*/
+/*const promiseTwo = new Promise (function (resolve, reject) {
+    setTimeout (function () {
+        resolve({ username: "nitin", email: "n.com"})
+    },2000)
+})
+promiseTwo.then(function(user) {
+    console.log(user)
+}) */
+  
+const promisefour = new Promise (function (resolve , reject){
+
+
+    let error = true
+    if (!error) {
+        resolve({username: "nitin" , roll: "rana"})
+    }
+    else {
+        reject("nhi chala ")
+    }
+})
+promisefour.then ((user) => {
+console.log(user)
+return user.username})
+.then((username )=> {
+console.log(username)
+})
+.catch( (error) => {
+    console.log(error)
+})
+.finally( function() {
+console.log("yeh toh chalega hi chlega")
+})
+
+//console.log(username);
+
+   </script>
+    
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

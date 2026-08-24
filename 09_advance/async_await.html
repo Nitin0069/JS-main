@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<h1> chl </h1>
+<h1> async await try catch</h1>
+<script>
+/*
+
+async function hello () {
+    return "hello"
+}
+hello()
+*/
+/*
+
+async function consumepromise4 () {
+    try{
+        const user = await promisefour;
+        console.log(user)
+        console.log(user.username);
+
+    }
+    catch (error) {
+        console.log(error);
+    }
+}
+    */
+/*
+function api () {
+    return new Promise (function (resolve, reject) {
+        setTimeout(() =>{
+            console.log("weather api")
+            resolve ("200");
+        },2000)
+    })
+}
+async function getweatherData (yoo) {
+const data =     await api();
+console.log(data)
+}
+
+getweatherData();
+*/
+/*
+const promisefour = new Promise(function (resolve, reject) {
+    let error = true;
+    if (!error) {
+        resolve({ username: "javascript", roll: "js" });
+    } else {
+        reject("nhi chala ");
+    }
+});
+
+async function user() {
+    try {
+        const data = await promisefour;
+        console.log(data);
+    } catch (error) {
+        console.log(error); 
+    }
+}
+
+user();
+
+
+
+/*
+async function gwak  (){
+    const chal =  await promisefour;
+     console.log(chal)
+     console.log(chal.username)
+}
+gwak(); 
+*/
+
+ /* async function apiaaja() {
+
+    try {
+        const apii = await fetch('https://jsonplaceholder.typicode.com/users');
+
+        const data = await apii.json();
+
+        console.log(data);
+
+    } catch (error) {
+        console.log(error);
+    }
+
+}. */
+
+//apiaaja();
+
+/*
+fetch('https://jsonplaceholder.typicode.com/users')
+.then(function ( nitu){
+    return nitu.json()
+})
+.then (function (aaja ){
+    console.log(aaja)
+})
+.catch (function (galat ) {
+    console.log("galat")
+})
+*/
+async function exp() {
+    try {
+        const responsee = await fetch('https://jsonplaceholder.typicode.com/users');
+
+        if (!responsee.ok) {
+            throw new Error (`http error ${responsee.status}`);
+
+            
+        }
+        const data = await responsee.json ();
+        console.log(data);
+    }
+    catch (error) {
+        console.log("galat" , error)
+    }
+    
+
+}
+
+exp();
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

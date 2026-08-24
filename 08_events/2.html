@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2 project</title>
+</head>
+<body>
+    <h1> BADMASHI </h1>
+<button id = "stop"> Stop </button> 
+
+    <script> 
+
+
+
+const chng = document.querySelector("h1")
+
+  const ruk = setTimeout (function () {
+    chng.innerHTML = "best bacha"
+
+},2000)
+
+document.addEventListener('click', function (){
+    clearTimeout(ruk)
+    console.log("ruk gya")
+})
+//clearTimeout(ruk)
+
+</script>
+</body>
+</html>

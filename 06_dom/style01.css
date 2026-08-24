@@ -1,0 +1,21 @@
+  /* .daba {
+height: 100px;
+width: 100px;
+background-color: white;
+color: black;
+ } */
+
+
+ .bg-black {
+    background-color: black ;
+    color: white;
+
+ }
+    .daba {
+      height: 100px;
+      width: 100px;
+      background-color: white;
+      color: black;
+      margin-left : 100px;
+
+    }

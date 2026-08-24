@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1> exp </h1>
+    <ul class = "no">
+<li> html </li>
+
+
+
+    </ul>
+
+
+
+<script>
+/*
+    function addElement (lang) {
+const li = document.createElement('li')
+li.innerHTML = lang
+const amma = document.querySelector('.no')
+amma.appendChild(li)
+
+    }
+addElement('css');
+*/
+
+function addElement (lang) {
+const li = document.createElement('li')
+const addText = document.createTextNode(lang)
+li.appendChild(addText)
+document.querySelector('.no').appendChild(li);
+}
+
+addElement('js');
+addElement('php');
+addElement('python');
+
+const change  = document.querySelector('li:nth-child(2)')
+//  change.textContent = 'JAVASCRIPT'
+const neww = document.createElement('li')
+neww.textContent = "javascipt" 
+change.replaceWith(neww)
+
+
+const first = document.querySelector('li:first-child')
+first.outerHTML = '<li>typescript</li>'
+
+const last = document.querySelector('li:last-child')
+last.remove()
+
+
+
+
+</script>
+
+</body>
+</html>
