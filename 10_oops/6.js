@@ -2,6 +2,8 @@
     // let name = "hitesh"
     // let mychannel = "chaii     "
 
+const { use } = require("react")
+
     // console.log(name.length);
     // console.log(mychannel.length)
 
@@ -79,9 +81,19 @@ const TAsupport = {
     fullTime: true
 }
 
-
+/* 
 user.__proto__ = teacher;
 teacher.__proto__ = teachingSupport;
 teachingSupport.__proto__ = TAsupport;
 
 console.log(TAsupport.isAvailable);
+*/
+
+//modern way
+
+Object.setPrototypeOf(user, teacher)
+//Object.setPrototypeOf(TAsupport,user)
+Object.setPrototypeOf(user,TAsupport)
+
+console.log(user.makeVideo)
+console.log(TAsupport.name)
