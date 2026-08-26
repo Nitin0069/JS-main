@@ -34,7 +34,7 @@ heroPower.exp();
 
 
 // inheritance
-
+/*
 
 class Person {
     constructor (name,age) {
@@ -59,3 +59,29 @@ console.log(student.name);
 student.introduce();
 student.study();
 
+*/
+const user = {
+    name: "Niitn",
+    email: "nitin4"
+}
+ 
+
+const teacher = {
+    makeVideo : true
+}
+
+const teachingSupport = {
+    isAvailable: false
+}
+ 
+const TAsupport = {
+    makeAssignment: 'JS assignment',
+    fullTime: true
+}
+
+
+user.__proto__ = teacher;
+teacher.__proto__ = teachingSupport;
+teachingSupport.__proto__ = TAsupport;
+
+console.log(TAsupport.isAvailable);
