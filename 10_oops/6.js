@@ -1,21 +1,20 @@
     // console.log("nitin")
     // let name = "hitesh"
     // let mychannel = "chaii     "
-
+/*
 const { use } = require("react")
 
     // console.log(name.length);
     // console.log(mychannel.length)
 
-  /*  let myHero = ["thor", "spiderman"]
+    let myHero = ["thor", "spiderman"]
     let heroPower = {
         thor: "hammer",
         spiderman: "sling",
 
          
     }
-        */
-/*
+        
     Object.prototype.exp = function () {
         console.log(`spiderman power is ${this.spiderman}`)
     }
@@ -31,12 +30,10 @@ const { use } = require("react")
      myHero.hey();
 heroPower.exp();
   //  heroPower.hey()
-*/
  
 
 
 // inheritance
-/*
 
 class Person {
     constructor (name,age) {
@@ -61,7 +58,7 @@ console.log(student.name);
 student.introduce();
 student.study();
 
-*/
+
 const user = {
     name: "Niitn",
     email: "nitin4"
@@ -81,19 +78,25 @@ const TAsupport = {
     fullTime: true
 }
 
-/* 
 user.__proto__ = teacher;
 teacher.__proto__ = teachingSupport;
 teachingSupport.__proto__ = TAsupport;
 
 console.log(TAsupport.isAvailable);
-*/
 
 //modern way
-
 Object.setPrototypeOf(user, teacher)
 //Object.setPrototypeOf(TAsupport,user)
 Object.setPrototypeOf(user,TAsupport)
 
 console.log(user.makeVideo)
 console.log(TAsupport.name)
+
+*/
+let dnaam = "chaiii             "
+String.prototype.naam = function (){
+    console.log(this)
+    console.log(this.trim().length)
+}
+dnaam.naam();
+"nunu".naam()
