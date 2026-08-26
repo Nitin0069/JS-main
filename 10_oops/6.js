@@ -5,14 +5,15 @@
     // console.log(name.length);
     // console.log(mychannel.length)
 
-    let myHero = ["thor", "spiderman"]
+  /*  let myHero = ["thor", "spiderman"]
     let heroPower = {
         thor: "hammer",
         spiderman: "sling",
 
          
     }
-
+        */
+/*
     Object.prototype.exp = function () {
         console.log(`spiderman power is ${this.spiderman}`)
     }
@@ -28,3 +29,33 @@
      myHero.hey();
 heroPower.exp();
   //  heroPower.hey()
+*/
+ 
+
+
+// inheritance
+
+
+class Person {
+    constructor (name,age) {
+        this.name = name;
+        this.age = age;
+    }
+    introduce () {
+        console.log(`My name is ${this.name}`);
+    }
+}
+class Student extends Person {
+
+    study () {
+        console.log(`${this.name} is studying`);
+
+    }
+}
+const student = new Student("Nitin", 21)
+console.log(student)
+student.study()
+console.log(student.name);
+student.introduce();
+student.study();
+
