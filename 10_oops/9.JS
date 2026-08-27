@@ -23,4 +23,4 @@ logMe() {
    //console.log(chal)
    chal.addCourse()
    const masalaChai = new User("masalachai")
-   masalaChai.logMe()
+   masalaChai.logMe ()
