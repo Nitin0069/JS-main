@@ -1,7 +1,7 @@
     // console.log("nitin")
     // let name = "hitesh"
     // let mychannel = "chaii     "
-/*
+
 const { use } = require("react")
 
     // console.log(name.length);
@@ -92,7 +92,7 @@ Object.setPrototypeOf(user,TAsupport)
 console.log(user.makeVideo)
 console.log(TAsupport.name)
 
-*/
+
 let dnaam = "chaiii             "
 String.prototype.naam = function (){
     console.log(this)
