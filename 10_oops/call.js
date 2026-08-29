@@ -18,6 +18,7 @@ let name2 = {
 printfull.call(name2);
 
 
+
 //apply
  let prit = printfull.bind(name);
  prit();
