@@ -6,7 +6,8 @@
     <title> closure </title>
  </head>
  <body>
-
+   <button id = "orange"> orange </button>
+<button id = "blue"> blue </button>
 
     <script>
          
@@ -41,6 +42,31 @@ myCounter();
 myCounter();
 
 
+
+    </script>
+    <script>
+ 
+/*document.getElementById("orange").onclick = function () {
+   document.body.style.backgroundColor = 'orange'
+}
+document.getElementById("blue").addEventListener("click", function (){
+document.body.style.backgroundColor = "blue"
+})
+
+
+function clickhandler (color) {
+   document.body.style.backgroundColor = '${color}'
+}
+document.getElementById("orange").onclick = clickhandler()
+
+*/
+
+   function clickhandler (color) {
+      return function() {
+         document.body.style.background = `${color}`
+      }
+   }W
+   document.getElementById('orange').onclick = clickhandler("orange")
 
     </script>
  </body>
