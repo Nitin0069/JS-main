@@ -109,7 +109,7 @@ chalo.name = "nakshu"
 console.log(chalo.name)
 */
 
-
+/*
 function user  (email, password) {
 this._email = email;
 this._password = password;
@@ -127,3 +127,12 @@ this._email = value
 }
 const obj = new user ("chal");
 console.log(obj.email);
+*/
+
+
+const exp = {}
+
+Object.defineProperty(exp, "name", {
+    value: "too"
+})
+console.log(exp.name);

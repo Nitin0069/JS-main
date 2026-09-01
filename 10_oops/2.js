@@ -12,7 +12,7 @@ const user = {
 console.log(user.roll)
 console.log(user.getUserDetails)
 */
-
+/*
 
 function anshi(username, age , male ) {
     this.username = username;
@@ -25,4 +25,9 @@ this.greetings = function () {
 }
 const chal =  new anshi("chotu", 21, "M");
 console.log(chal)
-chal.greetings();
+chal.greetings();4
+
+*/
+
+
+
