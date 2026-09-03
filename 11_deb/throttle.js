@@ -63,4 +63,31 @@ chalpada("tandjnfnana")
 
 
 
-console.log(niitn)
+console.log("niitn")
+
+
+
+
+
+function nakshu (bhadwa) {
+    console.log("nakshu bhadwa hai kya ", bhadwa)    
+}
+
+function throotle (fn, delay) {
+let intialtimee = 0
+return function (...args) {
+    const noOw = Date.now()
+    if (noOw - intialtimee < delay) {
+
+    
+        return
+    }
+
+intialtimee = noOw
+fn(...args)
+}
+}
+const chalpad = throotle(nakshu,2000)
+chalpad("yiiyiy")
+chalpad("fjfjf");
+
