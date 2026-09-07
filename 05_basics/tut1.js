@@ -53,7 +53,7 @@ console.log(i);
     }
 
 }  */
-
+/*
 const myArray = ["a" , "b" , "c" , "d"];
 for (let i = 0; i < myArray.length; i++) {
     if (i === 2);
@@ -61,7 +61,7 @@ for (let i = 0; i < myArray.length; i++) {
     break;
 }
 
-
+*/
 //break and continue
 /*
 
@@ -71,5 +71,73 @@ for (let i = 1; i <= 20; i++) {
     }
 console.log(`value of i is ${i} `);
     
+}
+*/
+
+/*
+for (let  i = 1; i < 10; i++) {
+
+
+    console.log(i * 5)
+
+}
+
+*/
+/*
+const user = ["name", "age", "subject"]
+
+
+user.forEach (function (items,index,arrray ) {
+    console.log(items,index,arrray)
+})
+*/
+
+let number = [1,2,3,4,5,6,7,8]
+
+const maal = number.filter (function (element) {
+   // console.log(element)
+    if (element % 2 != 0) {
+        return element;
+    }
+    
+})
+
+console.log(maal)
+
+
+const naya =  number.map(function (chal) {
+    return chal * 2
+})
+console.log(naya)
+
+
+
+let nums = [12,45,7,89,23,56]
+
+let tanu = nums.reduce(function (acc, curr){
+    if (acc > curr) {
+        return acc;
+
+    } else {
+        return curr
+    }
+},)
+
+
+console.log(tanu);
+
+
+
+
+
+
+
+
+
+
+
+/*
+for (const maal in user) {
+    console.log(maal)
 }
 */
